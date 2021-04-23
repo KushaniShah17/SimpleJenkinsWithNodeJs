@@ -1,0 +1,25 @@
+pipeline{
+    agent any
+    stages{
+        stage("Check Version"){
+            steps{
+                echo "Checking Version"
+            }
+        }
+        stage("Build"){
+            steps{
+                echo "Building the application"
+            }
+        }
+        stage("Test"){
+            steps{
+                echo "TEsting the application"
+            }
+        }
+        stage("Release the Version"){
+            steps{
+                echo "Relase the Version"
+            }
+        }
+    }
+}
